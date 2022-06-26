@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { isString } from '@nestjs/common/utils/shared.utils';
-import { GraphQLSchema, lexicographicSortSchema, printSchema } from 'graphql';
+import { GraphQLSchema, lexicographicSortSchema } from 'graphql';
+import { printSchema } from '@apollo/federation';
 import { resolve } from 'path';
 import { GRAPHQL_SDL_FILE_HEADER } from './graphql.constants';
 import { GqlModuleOptions } from './interfaces';
